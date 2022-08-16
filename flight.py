@@ -44,7 +44,7 @@ def main():
     
     result = ""
     if st.button('Predict'):
-        result = load_model('flight.pkl',CRSDepTime, DepTime, CRSArrTime, ArrTime, CarrierDelay, WeatherDelay, NASDelay, SecurityDelay, LateAircraftDelay)
+        result = load_model('Flight.pkl',CRSDepTime, DepTime, CRSArrTime, ArrTime, CarrierDelay, WeatherDelay, NASDelay, SecurityDelay, LateAircraftDelay)
         # st.text('The output is {}'.format(int(result[0])))
         if result == 0:
             st.text("THERE IS NO DELAY IN FLIGHT. FLIGHT WILL ARRIVE ON TIME !!!!!!!!")
